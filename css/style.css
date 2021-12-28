@@ -225,11 +225,11 @@ aside{
     -moz-transition: all .5s linear;
     -ms-transition: all .5s linear;
     -o-transition: all .5s linear;
-    
 }
 
 
 aside .nav{
+
 
     padding:15px 40px 15px 40px;
 
@@ -325,7 +325,7 @@ aside .fa-times{
 .azkar-mouslem>.contener{
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: center;
     gap:30px;
 }
@@ -542,13 +542,13 @@ footer>p{
     footer .contener .contact,
     footer .contener .usfal_link,
     footer .contener .about{
-        width:100%;
+        width:90%;
         padding-top: 40px;
     }
 
     footer .contener h3::after{
 
-        width:300px;
+        width:200px;
    }
 }
 
