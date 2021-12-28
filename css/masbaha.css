@@ -132,7 +132,7 @@ header>.contener>div>img{
 /* start aside*/
 
 aside{
-    width:100%;
+    width:120%;
     height:100vh;
     position:fixed;
     top:-100%;
@@ -144,7 +144,6 @@ aside{
     -moz-transition: all .5s linear;
     -ms-transition: all .5s linear;
     -o-transition: all .5s linear;
-    
 }
 
 
