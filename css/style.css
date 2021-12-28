@@ -130,6 +130,8 @@ a{text-decoration: none;}
 /* start header*/
 header{
     z-index: 400;
+    top:0px;
+    left:0px;
     padding:10px 0px 10px 0px;
     justify-content: space-evenly;
     background-color:var(--mainColor);
