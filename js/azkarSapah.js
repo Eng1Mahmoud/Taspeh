@@ -49,14 +49,17 @@ finsh.children[1].children[0].onclick = function(){
 // start up bottom
 
     let up = document.querySelector(".up");
+    let header = document.querySelector("header");
 window.onscroll = function(){
 
-    if(window.scrollY >= 80){
+    if(window.scrollY >= 280){
 
         up.style.visibility = "visible";
+        header.style.cssText = " position: fixed;";
     }
     else{
         up.style.visibility = "hidden";
+        header.style.cssText = " position: static;";
     }
 }
 // end  up bottom
@@ -71,7 +74,7 @@ console.log(close.parentElement.parentElement);
 
 close.onclick = function() {
 
- this.parentElement.parentElement.style.cssText =  " position:absolute; top:-100%; ";
+ this.parentElement.parentElement.style.cssText =  " position:absolute; top:-120%; ";
 
 };
 

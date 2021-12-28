@@ -21,7 +21,7 @@ console.log(close.parentElement.parentElement);
 
 close.onclick = function() {
 
- this.parentElement.parentElement.style.cssText =  " position:absolute; top:-100%; ";
+ this.parentElement.parentElement.style.cssText =  " position:absolute; top:-120%; ";
 
 };
 
@@ -43,3 +43,17 @@ menue.onclick = function() {
     
 }
 
+
+let header = document.querySelector("header");
+window.onscroll = function(){
+
+if(window.scrollY >= 150){
+
+
+    header.style.cssText = " position: fixed;";
+}
+else{
+
+    header.style.cssText = " position: static;";
+}
+}
