@@ -138,7 +138,7 @@ aside{
     top:-120%;
     left:0px;
     background-color: rgba(0, 0, 0, 0.95) ;
-    z-index: 100;
+    z-index: 1000;
     transition: all .5s linear;
     -webkit-transition: all .5s linear;
     -moz-transition: all .5s linear;
