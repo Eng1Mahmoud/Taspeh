@@ -132,7 +132,7 @@ header>.contener>div>img{
 /* start aside*/
 
 aside{
-    width:120%;
+    width:-120%;
     height:100vh;
     position:fixed;
     top:-100%;
