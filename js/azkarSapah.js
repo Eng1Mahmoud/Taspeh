@@ -1,18 +1,19 @@
 
 //start azkar
-let masbaha = document.querySelectorAll(".content>.contener .zekr");
-let finsh = document.querySelector(".content>.contener .finsh");
+let masbaha = document.querySelectorAll(".azkarspahORmasa>.contener .zekr");
+let finsh = document.querySelector(".azkarspahORmasa>.contener .finsh");
+
     
 finsh.children[1].children[0].onclick = function(){
 
     window.location.reload();
    };
 
-
     masbaha.forEach(function(e){
 
+      
         e.children[0].children[2].onclick = function(){
-
+           
             e.children[0].children[1].textContent++;
 
             let gole = parseInt(e.children[1].children[1].dataset.gole);
@@ -23,13 +24,13 @@ finsh.children[1].children[0].onclick = function(){
                   setTimeout(function(){
 
                     e.remove();
+                  
+                  
                   },300);
                  
               }
 
-         
-              
-            if(e.parentElement.children.length == 2 ){
+            if(e.parentElement.children.length == 2 && e.children[0].children[1].textContent >= gole  ){
               
                finsh.style.display = "block";
             }
@@ -39,6 +40,7 @@ finsh.children[1].children[0].onclick = function(){
         e.children[0].children[3].onclick = function(){
 
             e.children[0].children[1].textContent = 0;
+            Aud.play();
         }
 
        
@@ -48,20 +50,22 @@ finsh.children[1].children[0].onclick = function(){
 
 // start up bottom
 
-    let up = document.querySelector(".up");
-    let header = document.querySelector("header");
-window.onscroll = function(){
+let up = document.querySelector(".up");
+let header = document.querySelector("header");
+   window.onscroll = function(){
 
-    if(window.scrollY >= 280){
+if(window.scrollY >= 280){
 
-        up.style.visibility = "visible";
-        header.style.cssText = " position: fixed;";
-    }
-    else{
-        up.style.visibility = "hidden";
-        header.style.cssText = " position: static;";
-    }
+    up.style.visibility = "visible";
+    header.style.cssText = " position: fixed;";
+
 }
+else{
+    up.style.visibility = "hidden";
+    header.style.cssText = " position: static;";
+}
+}
+
 // end  up bottom
 
 //aside 
@@ -95,3 +99,11 @@ menue.onclick = function() {
     
     
 }
+
+
+
+
+
+
+
+

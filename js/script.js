@@ -13,6 +13,7 @@ window.onload = function() {
 // end loud page
 
 // start azkar
+    
     let masbaha = document.querySelectorAll(".azkar-mouslem>.contener .zekr");
     
     masbaha.forEach(function(e){
@@ -20,13 +21,14 @@ window.onload = function() {
         e.children[0].children[2].onclick = function(){
 
             e.children[0].children[1].textContent++;
-
+           
          
         };
 
         e.children[0].children[3].onclick = function(){
 
             e.children[0].children[1].textContent = 0;
+
         }
     })
 

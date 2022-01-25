@@ -1,0 +1,143 @@
+
+
+/* start azkar-mouslem*/
+.azkar-mouslem{
+
+    padding:50px 0px 50px 0px;
+    background-color:white ;
+    text-align: center;
+    background-image: url("../img/back-min.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &>.contener{
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        justify-content: center;
+        gap:30px;
+
+        .zekr{
+            background-color: white;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            box-shadow:0px 0px 3px 0px rgba(169, 169, 169, 0.9) inset;
+            padding:30px 15px 30px 15px;
+             /* start img div*/
+            .img{
+
+                position: relative;
+                width:200px;
+                height: 200px;
+                margin:20px auto 40px auto;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                
+                }
+
+                .num,.reset,.count{
+                    position: absolute;
+                
+                }
+                .num{
+                    width: fit-content;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top:26px;
+                    right: 30px;
+                    font-size: 40px;
+                    color: #00000099;
+                    font-family:Digital-7;
+                }
+                .reset{
+                    width:30px;
+                    height: 40px;
+                    top:100px;
+                    right: 35px;
+                    cursor:pointer; 
+                     
+                   
+                }
+                .count{ 
+                    width:50px;
+                    height: 50px;
+                    top:128px;
+                    right: 78px;
+                    cursor:pointer; 
+                  ;
+                    
+                }
+
+
+            }
+
+            // end img div
+
+            /* start description div*/
+            .discr{
+                padding-left: 40px;
+                padding-right: 40px;
+                word-spacing: 1px;
+
+                h2{
+                    font-size: 18px;
+                    color:$mainColor;
+                    font-style: italic;
+                  
+                }
+
+                q{
+                    font-size: 18px;
+                    color:rgba(11, 15, 15, 0.47);
+                    quotes: ",," "،،" ;
+                    display:block;
+                    font-weight: 500;
+                    text-align: center;
+
+                    &::before,&::after{
+                        padding-bottom: 20px;
+                        color:$mainColor;
+                        font-size: 60px;
+                        font-weight: bolder;
+                        font-family: FontAwesome;
+                        display:block;
+                        text-align: right;
+                        font-weight: bolder;
+                    }
+                    &::after{
+                        text-align: left;
+                    }
+                 
+                }
+            }
+
+             /* end description div*/
+        }
+        
+    }
+}
+
+/*start media azkar-mouslem*/
+
+@media (max-width:400px) {
+
+    .azkar-mouslem{
+
+        .contener{
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+    }
+    
+}
+
+/*end media azkar-mouslem*/
+/* end azkar-mouslem*/

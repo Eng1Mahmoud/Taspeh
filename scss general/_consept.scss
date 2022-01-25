@@ -1,0 +1,61 @@
+
+
+$mainColor:rgba(0, 139, 139, 0.9);
+$scouncolor:rgba(255, 68, 0, 1);
+
+/* start body*/
+body{
+    direction: rtl;
+    text-align: right;
+
+}
+
+body::-webkit-scrollbar{
+    width:15px;
+    background-color:$mainColor;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgba(49, 17, 5, 0.5);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* end body*/
+
+// start variable
+
+$mainColor:rgba(0, 139, 139, 0.9);
+$scouncolor:rgba(255, 68, 0, 1);
+
+// end variable
+
+
+.contener{
+    margin: 0px auto 0px auto;
+    padding:0px 15px 0px 15px;
+  }
+  html{
+      scroll-behavior: smooth;
+  
+  }
+  
+  *{
+      margin:0px;
+      box-sizing: border-box;
+      padding:0px;
+      font-family:sans-serif;
+     
+     
+  }
+  ul{list-style: none;}
+  a{text-decoration: none;}
+  
+  /* start font*/
+  @font-face {
+      font-family:Digital-7;
+      src: url("../font/digital-7.ttf");
+  }
+  
+  /* end font*/

@@ -1,0 +1,61 @@
+
+@import "../scss general/_consept.scss";
+body{
+
+    overflow-y: hidden;
+}
+  /*start louding page*/
+
+.loud{
+
+    width: 100%;
+    height: 100vh;
+    background-color:rgb(5, 28, 71);
+    position: fixed;
+    left: 0px;
+    top:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    perspective: 300px;
+
+    .welcom{
+
+        img{
+            width:150px;
+            height:150px;
+            animation: loud 1s linear infinite;
+            -webkit-animation: loud 1s linear infinite;
+            transition: all 1s linear;
+            -webkit-transition: all 1s linear;
+            -moz-transition: all 1s linear;
+            -ms-transition: all 1s linear;
+            -o-transition: all 1s linear;
+        }
+    }
+
+}
+
+
+// end louding page
+
+@import "../scss general/_aside.scss";
+
+@import "../scss general/_header.scss";
+
+@import "../scss general/_azkar.scss";
+
+@import "../scss general/_azkarmouslem.scss";
+
+@import "../scss general/_footer.scss";
+
+@import "../scss general/_up_contener_animation";
+
+
+
+
+
+
+
+

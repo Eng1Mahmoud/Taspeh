@@ -1,0 +1,161 @@
+
+/*start footer*/
+footer{
+
+    background-color: rgba(0, 0, 0, 0.884);
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+   &> .contener{
+    
+        display:flex;
+        flex-wrap: wrap;
+        padding:20px 20px 60px 20px;
+        justify-content: space-between;
+
+        h3{
+            font-size: 20px;
+            font-weight: 400px;
+            padding-bottom: 30px;
+            position: relative;
+
+            &::after{
+                content:" ";
+                position:absolute;
+                top: 40px;
+                right:0px;
+                width:120px;
+                height: 1px;
+                background-color:white;
+            }
+            
+        }
+
+
+        /*start about footer*/
+        .about{
+            width:45%;
+
+            .img{
+
+                &>img{
+                    width:100px;
+                    height:100px;
+                }
+                
+            }
+
+            &>p{
+                font-size: 18px;
+                padding-top:15px;
+                padding-left: 20px;
+                display: inline-block;
+
+                &>img{
+                    display: inline-block;
+                    width:20px;
+                    height: 20px;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                }
+                
+            }
+        }
+
+         /*end about footer*/
+
+
+         /*start usfal_link*/
+
+         .usfal_link{
+            width:25%;
+
+            ul{
+                li{
+                    padding-bottom: 10px;
+                    a{
+                        color:white;
+                        font-size: 18px;
+                        font-weight: 100px;
+
+                        &:hover{
+                            color:$mainColor;
+                         }
+                    }
+                }
+            }
+        }
+
+        /*end usfal_link*/
+
+
+        /* start cotact*/
+        .contact{
+            width:25%;
+
+            p{
+                font-size:18px;
+                font-weight: 0px;
+                padding-bottom: 10px;
+
+                i{
+                    padding-left: 5px;
+                }
+            }
+        }
+
+        /*end contact*/
+
+   
+        
+    }
+        /*start hr*/
+
+        hr{
+
+            background-color:rgba(255, 255, 255, 0.562);
+            outline: none;
+            border:none;
+            height:.1px;
+        }
+
+        /* end hr*/
+
+        /* start p end */
+  
+        &>p{
+            padding-top:20px;
+            font-size: 20px;
+            font-weight: 300;
+            text-align: center;
+        }
+        
+        /*end p end*/
+}
+
+/* start media footer*/
+
+@media (max-width: 992px) {
+    footer{
+
+        .contener{
+
+            &.contact,.usfal_link,.about{
+                width:90%;
+                padding-top: 40px;
+            }
+
+            h3{
+                &::after{
+                    width:200px;
+                }
+            }
+        }
+    } 
+
+}
+/*end media footer*/
+
+/* end footer */
+

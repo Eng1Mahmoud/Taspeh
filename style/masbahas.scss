@@ -1,0 +1,188 @@
+@import "../scss general/consept";
+@import "../scss general/_aside.scss";
+@import "../scss general/_header.scss";
+.azkar-mouslem {
+    padding: 52.5px 0px 52.5px 0px;
+    background-image: url("../img/back-min.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    .contener {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        justify-content: center;
+        gap: 30px;
+        .zekr {
+            background-color: white;
+            border-radius: 6px;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            -ms-border-radius: 6px;
+            -o-border-radius: 6px;
+            box-shadow: 0px 0px 3px 0px rgba(169, 169, 169, 0.9) inset;
+            padding: 30px 15px 30px 15px;
+            .img {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                margin: 20px auto 20px auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+                .num,
+                .reset,
+                .count {
+                    position: absolute;
+                }
+                .num {
+                    width: fit-content;
+                    height: 60px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: 26px;
+                    right: 30px;
+                    font-size: 40px;
+                    color: #00000099;
+                    font-family: Digital-7;
+                    visibility:hidden ;
+                }
+                .count {
+                    width: 50px;
+                    height: 50px;
+                    top: 128px;
+                    right: 78px;
+                    cursor: pointer;
+                    user-select: contain;
+                    visibility:hidden ;
+                }
+                .reset {
+                    width: 30px;
+                    height: 40px;
+                    top: 100px;
+                    right: 35px;
+                    cursor: pointer;
+                }
+            }
+            .discr {
+                q {
+                    font-size: 25px;
+                    color: rgba(11, 15, 15, 0.47);
+                    quotes: ",," "،،";
+                    font-weight: 500;
+                    text-align: center;
+                    font-family: fantasy;
+                    &::before,
+                    &::after {
+                        padding: 0px 20px 0px 20px;
+                        color: $mainColor;
+                        font-size: 60px;
+                        font-weight: bolder;
+                        font-family: FontAwesome;
+                        text-align: right;
+                        font-weight: bolder;
+                    }
+                    &::after {
+                        text-align: left;
+                    }
+                }
+            }
+            .add {
+                background: rgba(255, 255, 255, 0.808);
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 30px;
+                height: 90px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                .content {
+                    width:100%;
+                    background-color:red ;
+                    position: relative;
+                    [type="text"] {
+                        outline: none;
+                        height: 40px;
+                        width: 70%;
+                        border: 1px solid $mainColor;
+                        padding-right: 20px;
+                        font-size: 16px;
+                        border-right: none;
+                        border-bottom-left-radius: 10px;
+                        border-top-left-radius: 10px;
+                        position: absolute;
+                        left: 0px;
+                        top: 0px;
+                    }
+                    [type="submit"] {
+                        width: 30%;
+                        outline: none;
+                        height: 40px;
+                        background-color: $mainColor;
+                        color: white;
+                        border: none;
+                        font-size: 16px;
+                        cursor: pointer;
+                        position: absolute;
+                        right: 0px;
+                        top: 0px;
+                        border: 1px solid $mainColor;
+                        border-left: none;
+                        font-weight: bold;
+                        border-top-right-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                    }
+                }
+                .error {
+                    width: 70%;
+                    position: relative;
+                    background-color: $scouncolor;
+                    text-align: center;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    color: white;
+                    font-weight: 400px;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                    visibility: hidden;
+                    margin-top: 10px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: -20px;
+                        left:45%;
+                        border: 10px solid $scouncolor;
+                        border-color: transparent transparent $scouncolor transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:400px) {
+
+    .azkar-mouslem>.contener{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .azkar-mouslem>.contener .zekr .add .content  [type="text"]::placeholder {
+        font-size: 12px;
+    }
+    .azkar-mouslem>.contener .zekr .add{
+        width:100%;
+    }
+}
+
+    @import "../scss general/_footer.scss";
+    @import "../scss general/up_contener_animation";
+    @import "../scss general/_footer.scss";
+    @import "../scss general/up_contener_animation";
