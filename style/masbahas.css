@@ -270,7 +270,6 @@ header > .contener div img {
   font-size: 40px;
   color: #00000099;
   font-family: Digital-7;
-  visibility: hidden;
 }
 
 .azkar-mouslem .contener .zekr .img .count {
@@ -283,7 +282,6 @@ header > .contener div img {
      -moz-user-select: contain;
       -ms-user-select: contain;
           user-select: contain;
-  visibility: hidden;
 }
 
 .azkar-mouslem .contener .zekr .img .reset {
